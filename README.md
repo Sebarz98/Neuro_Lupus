@@ -104,18 +104,18 @@ Chi-Square test was conducted on AnAb and aPL, but was not statistically signifi
 
 ### Welch T-test
 
-By groupying based on NP-SLE, clinical statistically significant variables were: ['aPL syndrome', 'AnAb ', 'Anti-Rib-P']
+By groupying based on NP-SLE, clinical statistically significant variables were:['aPL syndrome', 'AnAb ', 'Anti-Rib-P']
 
 ### Wilcoxon rank-sum test
 
 Was conducted to compare continuous mri variables among groups based on NP-SLE 
-Many were found to be statistically significant, the 5 most
+Many were found to be statistically significant, the 5 most were plotted.
 
 ![Wilcoxon](https://user-images.githubusercontent.com/70062910/232326022-b679f2b8-c470-4fa6-a115-c2f74bc7ad99.png)
 
 ### Fisher’s exact 
 
-Was conducted to compare categorical variables among groups based on NP-SLE and AnAb
+Was conducted to compare categorical variables among groups based on NP-SLE and AnAb:
 Odds ratio: 7.00; P-value: 0.0461
 
 ### Kruskal-Wallis test (equivalent of ANOVA)
