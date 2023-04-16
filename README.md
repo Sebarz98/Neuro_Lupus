@@ -9,7 +9,7 @@ Investigating Systemic Lupus Erythematosus effects on volumetric brain MRI.
 ![feature_distribution](https://user-images.githubusercontent.com/70062910/232321176-20dc1a0c-c780-4c98-8231-575af1637d44.png)
 
 ### First 55 features with NP-SLE
-For every feature descriptive statistics go to /code/Stats
+For every feature distribution go to results/EDA then depending on the NP-EVENT, /Neuro or /Non_Neuro; for mean, median and sd go to 1, for percentiles and quantiles go to 2
 
 ![SLEDAI-2k (at the time of NP event)_distribution](https://user-images.githubusercontent.com/70062910/232322253-033d3533-b2c8-4cfe-9f15-f637aadfe004.png)
 ![C3 (mgdl)_distribution](https://user-images.githubusercontent.com/70062910/232322265-6238b3d0-a55b-412a-b52e-d5fe69034f36.png)
@@ -51,5 +51,80 @@ Using NP-SLE as target column
 
 ![10_correlated_features](https://user-images.githubusercontent.com/70062910/232322932-66e715b7-114e-47c2-b9a0-067b9ad35a63.png)
 
+## Descriptive Statistics
 
+For the full descriptive statistics go to /code/Stats
 
+<img width="563" alt="Screenshot 2023-04-16 at 17 39 17" src="https://user-images.githubusercontent.com/70062910/232324073-4d4076b8-ccd6-4423-a943-ee890f43cdc7.png">
+<img width="639" alt="Screenshot 2023-04-16 at 17 39 35" src="https://user-images.githubusercontent.com/70062910/232324087-8ead1b4c-9b02-4b43-a4c3-58e2863b9a79.png">
+<img width="413" alt="Screenshot 2023-04-16 at 17 39 58" src="https://user-images.githubusercontent.com/70062910/232324097-62f30a83-fa3f-43b3-8100-27b5ada7cf9b.png">
+
+#### Distributions were checked for normality and homogenity
+#### Statistical significance has been evaluated for a p-value < 0.05
+
+## Parametric Tests
+
+### T-Test
+T-Test between NP-SLE and not was conducted amongst mri features, as normally distributed. 
+Amidst the statistically relevant regions found: 'Amygdala total volume %', OpIFG total volume cm3', 'MFC left volume %', 'SMC volume asymmetry', 'Occipital left volume cm3','SOG total thickness mm', 'OCP left thickness norm.', 'AIns thickness asymmetry'. 
+
+#### Cat plot with Abnormal White matter on y-axis, NP-SLE on x-axis and Disease Duration as other grouping
+
+![T_test_white_duration_NP](https://user-images.githubusercontent.com/70062910/232325116-894bf5d4-3d41-4bfa-9969-1530182d022b.png)
+
+#### Cat plot with Abnormal White matter on y-axis, AnAb on x-axis and Disease Duration as other grouping
+
+![T_test_white_duration_AnAb](https://user-images.githubusercontent.com/70062910/232325132-2f7738ca-78b9-4fc6-81e0-a24a31519fdf.png)
+
+#### Cat plot with Abnormal White matter on y-axis, aPL on x-axis and Disease Duration as other grouping
+
+![T_test_white_duration_aPL](https://user-images.githubusercontent.com/70062910/232325149-4bf26ce9-7e2f-4be5-b8fe-525ee80fdcf8.png)
+
+#### Pair gird plot with Abnormal White matter on y-axis, aPL on x-axis and NP-SLE as other grouping
+
+![T_test_white_aPL_NP](https://user-images.githubusercontent.com/70062910/232325229-56f848fd-3add-4689-b6d7-2519c8de1c1b.png)
+
+#### Pair gird plot with Abnormal White matter on y-axis, AnAb on x-axis and NP-SLE as other grouping
+
+![T_test_white_AnAb_NP](https://user-images.githubusercontent.com/70062910/232325246-87f0e843-e6b8-4277-aa00-f552c58534ee.png)
+
+### One-way analysis of variance (ANOVA) with F-Distribution
+
+H0 not rejected for Abnormal White Matter based on NP-SLE
+![F_dist_NP_White](https://user-images.githubusercontent.com/70062910/232325830-2e63c86d-b221-4348-bbf2-73e26fcb024e.png)
+
+H0  rejected for SCA Thickness asymmetry based on NP-SLE
+![F_dist_NP_SCA](https://user-images.githubusercontent.com/70062910/232325837-85a50f56-6db7-43a6-b714-968277fa619a.png)
+
+### Chi-Square
+
+Chi-Square test was conducted on AnAb and aPL, but was not statistically significant
+
+## Non Parametric Tests
+
+### Welch T-test
+
+By groupying based on NP-SLE, clinical statistically significant variables were: ['aPL syndrome', 'AnAb ', 'Anti-Rib-P']
+
+### Wilcoxon rank-sum test
+
+Was conducted to compare continuous mri variables among groups based on NP-SLE 
+Many were found to be statistically significant, the 5 most
+
+![Wilcoxon](https://user-images.githubusercontent.com/70062910/232326022-b679f2b8-c470-4fa6-a115-c2f74bc7ad99.png)
+
+### Fisher’s exact 
+
+Was conducted to compare categorical variables among groups based on NP-SLE and AnAb
+Odds ratio: 7.00; P-value: 0.0461
+
+### Kruskal-Wallis test (equivalent of ANOVA)
+
+<img width="666" alt="kruskal" src="https://user-images.githubusercontent.com/70062910/232326335-57229d36-097a-44e9-9b44-98924f0f86b1.png">
+
+## Account for partial correlation
+
+Neurocognitive z-scores of specific neuroclinical domains were correlated with Abnormal White Matteer across the subject groups using Pearson correlation. 
+Adjusted for prednisone therapy (mg/day) and SLEDAI as partial correlations.
+
+By adjusting with partial correlation no statistically significant correlation were found. 
