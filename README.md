@@ -4,11 +4,11 @@ Investigating Systemic Lupus Erythematosus effects on volumetric brain MRI.
 # Preliminary Analysis
 
 ## Feature Distribution 
-###First 55 features
+### First 55 features
 
 ![feature_distribution](https://user-images.githubusercontent.com/70062910/232321176-20dc1a0c-c780-4c98-8231-575af1637d44.png)
 
-###First 55 features with NP-SLE
+### First 55 features with NP-SLE
 For every feature descriptive statistics go to /code/Stats
 
 ![SLEDAI-2k (at the time of NP event)_distribution](https://user-images.githubusercontent.com/70062910/232322253-033d3533-b2c8-4cfe-9f15-f637aadfe004.png)
@@ -17,7 +17,7 @@ For every feature descriptive statistics go to /code/Stats
 ![Cortical Grey Matter volume cm3_distribution](https://user-images.githubusercontent.com/70062910/232322305-0d8a1595-b61f-4763-adc5-911954de8f8b.png)
 ![Cerebellar Grey Matter volume cm3_distribution](https://user-images.githubusercontent.com/70062910/232322318-5666f0de-773a-4567-8797-f62b195ed3f9.png)
 
-###First 55 features without NP-SLE
+### First 55 features without NP-SLE
 
 ![SLEDAI-2k (at the time of NP event)_distribution](https://user-images.githubusercontent.com/70062910/232322481-d306704f-44a2-498c-bd9c-70866fd4fd6a.png)
 ![C3 (mgdl)_distribution](https://user-images.githubusercontent.com/70062910/232322495-a56316bb-f8ce-4d7c-9635-1f27ea6752cb.png)
