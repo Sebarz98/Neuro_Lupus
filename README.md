@@ -54,6 +54,7 @@ Using NP-SLE as target column
 ## Descriptive Statistics
 
 For the full descriptive statistics go to /code/Stats
+*Note that the NP-SLE column has been renamed as "result".
 
 <img width="563" alt="Screenshot 2023-04-16 at 17 39 17" src="https://user-images.githubusercontent.com/70062910/232324073-4d4076b8-ccd6-4423-a943-ee890f43cdc7.png">
 <img width="639" alt="Screenshot 2023-04-16 at 17 39 35" src="https://user-images.githubusercontent.com/70062910/232324087-8ead1b4c-9b02-4b43-a4c3-58e2863b9a79.png">
