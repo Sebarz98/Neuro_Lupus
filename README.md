@@ -141,7 +141,7 @@ Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry (partial corr): r =
 
 ## Regression Analysis
 
-A linear regression was employed by using: 
+A linear regression was employed to differentiate between non NP-SLE and NP-SLE, by using: 
 
 target = 'NP-SLE' <br />
 
@@ -165,7 +165,7 @@ False Positive Rate (FPR): 1.0 <br />
 
 ## Random Forest Model
 
-3 random forest models were deployed. <br />
+3 random forest models were deployed to differentiate between non NP-SLE and NP-SLE. <br />
 The best one used Boruta for feature selection. <br />
 
 Random Forest accuracy:  83.33 % <br />
