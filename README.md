@@ -84,25 +84,25 @@ Using NP-SLE as target column
 
 Spearman Correlation Coefficient was calculated for the features that did not met normality assumptions
 
-For Disease duration (months): 
-FuG volume asymmetry                         0.797314   
-PT thickness asymmetry                       0.527473   
-Hypertension                                 0.462805 
+For Disease duration (months): <br />
+FuG volume asymmetry                         0.797314 <br />
+PT thickness asymmetry                       0.527473 <br />
+Hypertension                                 0.462805 <br />
 
-For SLEDAI-2k (at the time of NP event): 
-PIns thickness asymmetry                               0.290418
-MPrG right thickness mm                                0.238174
-Hypertension                                           0.228016
+For SLEDAI-2k (at the time of NP event): <br />
+PIns thickness asymmetry                               0.290418 <br />
+MPrG right thickness mm                                0.238174 <br />
+Hypertension                                           0.228016 <br />
 
-For PGA (at the time of fMRI):
-PT thickness asymmetry                       0.278617
-PO total thickness mm                        0.260513
-PCgG left volume %                           0.239647
+For PGA (at the time of fMRI): <br />
+PT thickness asymmetry                       0.278617 <br />
+PO total thickness mm                        0.260513 <br />
+PCgG left volume %                           0.239647 <br />
 
-For SLICC-DI (at the time of NP event):
-ever smoking                                          0.456071
-PT right thickness norm.                              0.450192   
-PT right thickness mm                                 0.448960
+For SLICC-DI (at the time of NP event): <br />
+ever smoking                                          0.456071 <br />
+PT right thickness norm.                              0.450192 <br />
+PT right thickness mm                                 0.448960 <br />
 
 
 ### Partial Correlation
@@ -114,67 +114,67 @@ By adjusting with partial correlation no statistically significant correlation w
 
 Other Correlation with neuro events and NP-SLE (as result). The top 5 correlated features with NP-SLE were tested.
 
-total_neurocog vs SCA thickness asymmetry: r = 0.51, p = 0.01
-result vs SCA thickness asymmetry (partial corr): r = 0.34, p = 0.09
-Event_Seizure, ACS, myelitis, CVA vs SCA thickness asymmetry: r = 0.20, p = 0.31
-Event_Seizure, ACS, myelitis, CVA vs SCA thickness asymmetry (partial corr): r = 0.39, p = 0.06
+total_neurocog vs SCA thickness asymmetry: r = 0.51, p = 0.01 <br />
+result vs SCA thickness asymmetry (partial corr): r = 0.34, p = 0.09 <br />
+Event_Seizure, ACS, myelitis, CVA vs SCA thickness asymmetry: r = 0.20, p = 0.31 <br />
+Event_Seizure, ACS, myelitis, CVA vs SCA thickness asymmetry (partial corr): r = 0.39, p = 0.06 <br />
 
-total_neurocog vs Amygdala right volume %: r = 0.46, p = 0.02
-result vs Amygdala right volume % (partial corr): r = 0.39, p = 0.05
-Event_Seizure, ACS, myelitis, CVA vs Amygdala right volume %: r = 0.13, p = 0.53
-Event_Seizure, ACS, myelitis, CVA vs Amygdala right volume % (partial corr): r = 0.14, p = 0.51
+total_neurocog vs Amygdala right volume %: r = 0.46, p = 0.02 <br />
+result vs Amygdala right volume % (partial corr): r = 0.39, p = 0.05 <br />
+Event_Seizure, ACS, myelitis, CVA vs Amygdala right volume %: r = 0.13, p = 0.53 <br />
+Event_Seizure, ACS, myelitis, CVA vs Amygdala right volume % (partial corr): r = 0.14, p = 0.51 <br />
 
-total_neurocog vs Temporal thickness asymmetry: r = 0.44, p = 0.02
-result vs Temporal thickness asymmetry (partial corr): r = 0.48, p = 0.02
-Event_Seizure, ACS, myelitis, CVA vs Temporal thickness asymmetry: r = 0.45, p = 0.02
-Event_Seizure, ACS, myelitis, CVA vs Temporal thickness asymmetry (partial corr): r = 0.57, p = 0.00
+total_neurocog vs Temporal thickness asymmetry: r = 0.44, p = 0.02 <br />
+result vs Temporal thickness asymmetry (partial corr): r = 0.48, p = 0.02 <br />
+Event_Seizure, ACS, myelitis, CVA vs Temporal thickness asymmetry: r = 0.45, p = 0.02 <br />
+Event_Seizure, ACS, myelitis, CVA vs Temporal thickness asymmetry (partial corr): r = 0.57, p = 0.00 <br />
 
-total_neurocog vs TMP thickness asymmetry: r = 0.43, p = 0.03
-result vs TMP thickness asymmetry (partial corr): r = 0.44, p = 0.03
-Event_Seizure, ACS, myelitis, CVA vs TMP thickness asymmetry: r = 0.73, p = 0.00
-Event_Seizure, ACS, myelitis, CVA vs TMP thickness asymmetry (partial corr): r = 0.84, p = 0.00
+total_neurocog vs TMP thickness asymmetry: r = 0.43, p = 0.03 <br />
+result vs TMP thickness asymmetry (partial corr): r = 0.44, p = 0.03 <br />
+Event_Seizure, ACS, myelitis, CVA vs TMP thickness asymmetry: r = 0.73, p = 0.00 <br />
+Event_Seizure, ACS, myelitis, CVA vs TMP thickness asymmetry (partial corr): r = 0.84, p = 0.00 <br />
 
-total_neurocog vs MTG thickness asymmetry: r = 0.43, p = 0.03
-result vs MTG thickness asymmetry (partial corr): r = 0.47, p = 0.02
-Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry: r = 0.41, p = 0.03
-Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry (partial corr): r = 0.48, p = 0.02
+total_neurocog vs MTG thickness asymmetry: r = 0.43, p = 0.03 <br />
+result vs MTG thickness asymmetry (partial corr): r = 0.47, p = 0.02 <br />
+Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry: r = 0.41, p = 0.03 <br />
+Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry (partial corr): r = 0.48, p = 0.02 <br />
 
 ## Regression Analysis
 
 A linear regression was employed by using: 
 
-target = 'NP-SLE'
+target = 'NP-SLE' <br />
 
-predictors = ['SCA thickness asymmetry', 'Amygdala right volume %', 'Temporal thickness asymmetry', 'TMP thickness asymmetry', 'MTG thickness asymmetry', 'AnAb ', 'aPL syndrome']
+predictors = ['SCA thickness asymmetry', 'Amygdala right volume %', 'Temporal thickness asymmetry', 'TMP thickness asymmetry', 'MTG thickness asymmetry', 'AnAb ', 'aPL syndrome'] <br />
 
-Mean Squared Error:  0.29831871364555906
-R-squared:  -1.1478947382480253
+Mean Squared Error:  0.29831871364555906 <br />
+R-squared:  -1.1478947382480253 <br />
 
 Not significant. 
 
-A logistic regression was attempted. 
-Logistic Regression's accuracy:  66.67 % 
-The F-1 Score of the model: 0.4 
-The Recall Score of the model: 0.4
-AUC:0.4
-Sensitivity (TPR): 0.8
-Specificity (TNR): 0.0
-Precision (PPV): 0.8
-Negative Predictive Value (NPV): 0.0
-False Positive Rate (FPR): 1.0
+A logistic regression was attempted. <br />
+Logistic Regression's accuracy:  66.67 % <br />
+The F-1 Score of the model: 0.4 <br />
+The Recall Score of the model: 0.4 <br />
+AUC:0.4 <br />
+Sensitivity (TPR): 0.8 <br />
+Specificity (TNR): 0.0 <br />
+Precision (PPV): 0.8 <br />
+Negative Predictive Value (NPV): 0.0 <br />
+False Positive Rate (FPR): 1.0 <br />
 
 ## Random Forest Model
 
-3 random forest models were deployed. 
-The best one used Boruta for feature selection. 
+3 random forest models were deployed. <br />
+The best one used Boruta for feature selection. <br />
 
-Random Forest accuracy:  83.33 %
+Random Forest accuracy:  83.33 % <br />
 
-1. The F-1 Score of the model: 0.83
+1. The F-1 Score of the model: 0.83 <br />
 
-2. The Recall Score of the model: 0.83
+2. The Recall Score of the model: 0.83 <br />
 
-3. Classification report:
+3. Classification report: <br />
               precision    recall  f1-score   support
 
            0       0.75      1.00      0.86         3
@@ -185,9 +185,8 @@ Random Forest accuracy:  83.33 %
 weighted avg       0.88      0.83      0.83         6
 
 
-4. AUC:
-0.8333333333333333
-Specificity (TNR): 1.0
-Precision (PPV): 1.0
-Negative Predictive Value (NPV): 0.75
-False Positive Rate (FPR): 0.0
+4. AUC: 0.8333333333333333 <br />
+Specificity (TNR): 1.0 <br />
+Precision (PPV): 1.0 <br />
+Negative Predictive Value (NPV): 0.75 <br />
+False Positive Rate (FPR): 0.0 <br />
