@@ -3,63 +3,6 @@ Investigating Systemic Lupus Erythematosus effects on volumetric brain MRI.
 
 # Preliminary Analysis
 
-## Feature Distribution 
-### First 55 features
-
-![feature_distribution](https://user-images.githubusercontent.com/70062910/232321176-20dc1a0c-c780-4c98-8231-575af1637d44.png)
-
-### First 55 features with NP-SLE
-For every feature distribution go to results/EDA then depending on the NP-EVENT, /Neuro or /Non_Neuro; for mean, median and sd go to 1, for percentiles and quantiles go to 2
-
-![SLEDAI-2k (at the time of NP event)_distribution](https://user-images.githubusercontent.com/70062910/232322253-033d3533-b2c8-4cfe-9f15-f637aadfe004.png)
-![C3 (mgdl)_distribution](https://user-images.githubusercontent.com/70062910/232322265-6238b3d0-a55b-412a-b52e-d5fe69034f36.png)
-![Abnormal Appearing White Matter volume cm3_distribution](https://user-images.githubusercontent.com/70062910/232322282-583d9a37-2b6f-4545-b855-72c75a5798eb.png)
-![Cortical Grey Matter volume cm3_distribution](https://user-images.githubusercontent.com/70062910/232322305-0d8a1595-b61f-4763-adc5-911954de8f8b.png)
-![Cerebellar Grey Matter volume cm3_distribution](https://user-images.githubusercontent.com/70062910/232322318-5666f0de-773a-4567-8797-f62b195ed3f9.png)
-
-### First 55 features without NP-SLE
-
-![SLEDAI-2k (at the time of NP event)_distribution](https://user-images.githubusercontent.com/70062910/232322481-d306704f-44a2-498c-bd9c-70866fd4fd6a.png)
-![C3 (mgdl)_distribution](https://user-images.githubusercontent.com/70062910/232322495-a56316bb-f8ce-4d7c-9635-1f27ea6752cb.png)
-![Abnormal Appearing White Matter volume cm3_distribution](https://user-images.githubusercontent.com/70062910/232322502-4ab3d268-d327-4e98-8273-95cc553e6aa7.png)
-![Cortical Grey Matter volume cm3_distribution](https://user-images.githubusercontent.com/70062910/232322507-280946dd-cf73-4945-9bb6-18b2069c2ac0.png)
-![Cerebellar Grey Matter volume cm3_distribution](https://user-images.githubusercontent.com/70062910/232322512-878b1798-a312-4dc5-bc32-7548bbf862b5.png)
-
-## Features Relationship
-### Pair plot between SLEDAI (y-axis), prednisnone, anti-DNA and C3 (x-axis)
-
-![pair_sledai_prednisnone_dsDNa_c3](https://user-images.githubusercontent.com/70062910/232322689-0abb5d7b-cd56-48ae-ba1f-b7d579376995.png)
-
-### Strip plot between Disease Duration (y-axis) and various features
-
-![stripplot_disease_dur_vs_continuous](https://user-images.githubusercontent.com/70062910/232322842-5a08fda3-ab05-4058-ae21-e0aff5afced1.png)
-![stripplot_disease_dur_vs_features](https://user-images.githubusercontent.com/70062910/232322841-4356f17e-21b5-4b7d-8e23-d693221e7422.png)
-
-### Violin plot between Disease Duration (y-axis) and various features
-
-![violin_disease_against_features](https://user-images.githubusercontent.com/70062910/232322870-89e632fb-8cb5-4f0a-b973-2dc652cb6124.png)
-
-### Correlation Matrix
-
-![correlation_matrix](https://user-images.githubusercontent.com/70062910/232322890-351261b0-087c-4756-9b0a-6de50b2c7375.png)
-
-Using NP-SLE as target column 
-
-![correlation_target_event](https://user-images.githubusercontent.com/70062910/232322912-4f76704a-0c35-49c4-8029-82588342aeb3.png)
-
-10 most correlated features with NP-SLE
-
-![10_correlated_features](https://user-images.githubusercontent.com/70062910/232322932-66e715b7-114e-47c2-b9a0-067b9ad35a63.png)
-
-## Descriptive Statistics
-
-For the full descriptive statistics go to /code/Stats
-*Note that the NP-SLE column has been renamed as "result".
-
-<img width="563" alt="Screenshot 2023-04-16 at 17 39 17" src="https://user-images.githubusercontent.com/70062910/232324073-4d4076b8-ccd6-4423-a943-ee890f43cdc7.png">
-<img width="639" alt="Screenshot 2023-04-16 at 17 39 35" src="https://user-images.githubusercontent.com/70062910/232324087-8ead1b4c-9b02-4b43-a4c3-58e2863b9a79.png">
-<img width="413" alt="Screenshot 2023-04-16 at 17 39 58" src="https://user-images.githubusercontent.com/70062910/232324097-62f30a83-fa3f-43b3-8100-27b5ada7cf9b.png">
-
 #### Distributions were checked for normality and homogenity
 #### Statistical significance has been evaluated for a p-value < 0.05
 
@@ -123,9 +66,128 @@ Odds ratio: 7.00; P-value: 0.0461
 
 <img width="666" alt="kruskal" src="https://user-images.githubusercontent.com/70062910/232326335-57229d36-097a-44e9-9b44-98924f0f86b1.png">
 
-## Account for partial correlation
+## Correlation Analysis
+
+### Correlation Matrix
+
+![correlation_matrix](https://user-images.githubusercontent.com/70062910/232322890-351261b0-087c-4756-9b0a-6de50b2c7375.png)
+
+Using NP-SLE as target column 
+
+![correlation_target_event](https://user-images.githubusercontent.com/70062910/232322912-4f76704a-0c35-49c4-8029-82588342aeb3.png)
+
+10 most correlated features with NP-SLE
+
+![10_correlated_features](https://user-images.githubusercontent.com/70062910/232322932-66e715b7-114e-47c2-b9a0-067b9ad35a63.png)
+
+### Correlation Coefficients
+
+Spearman Correlation Coefficient was calculated for the features that did not met normality assumptions
+
+For Disease duration (months): 
+FuG volume asymmetry                         0.797314   
+PT thickness asymmetry                       0.527473   
+Hypertension                                 0.462805 
+
+For SLEDAI-2k (at the time of NP event): 
+PIns thickness asymmetry                               0.290418
+MPrG right thickness mm                                0.238174
+Hypertension                                           0.228016
+
+For PGA (at the time of fMRI):
+PT thickness asymmetry                       0.278617
+PO total thickness mm                        0.260513
+PCgG left volume %                           0.239647
+
+For SLICC-DI (at the time of NP event):
+ever smoking                                          0.456071
+PT right thickness norm.                              0.450192   
+PT right thickness mm                                 0.448960
+
+
+### Partial Correlation
 
 Neurocognitive z-scores of specific neuroclinical domains were correlated with Abnormal White Matteer across the subject groups using Pearson correlation. 
 Adjusted for prednisone therapy (mg/day) and SLEDAI as partial correlations.
 
 By adjusting with partial correlation no statistically significant correlation were found. 
+
+Other Correlation with neuro events and NP-SLE (as result). The top 5 correlated features with NP-SLE were tested.
+
+total_neurocog vs SCA thickness asymmetry: r = 0.51, p = 0.01
+result vs SCA thickness asymmetry (partial corr): r = 0.34, p = 0.09
+Event_Seizure, ACS, myelitis, CVA vs SCA thickness asymmetry: r = 0.20, p = 0.31
+Event_Seizure, ACS, myelitis, CVA vs SCA thickness asymmetry (partial corr): r = 0.39, p = 0.06
+
+total_neurocog vs Amygdala right volume %: r = 0.46, p = 0.02
+result vs Amygdala right volume % (partial corr): r = 0.39, p = 0.05
+Event_Seizure, ACS, myelitis, CVA vs Amygdala right volume %: r = 0.13, p = 0.53
+Event_Seizure, ACS, myelitis, CVA vs Amygdala right volume % (partial corr): r = 0.14, p = 0.51
+
+total_neurocog vs Temporal thickness asymmetry: r = 0.44, p = 0.02
+result vs Temporal thickness asymmetry (partial corr): r = 0.48, p = 0.02
+Event_Seizure, ACS, myelitis, CVA vs Temporal thickness asymmetry: r = 0.45, p = 0.02
+Event_Seizure, ACS, myelitis, CVA vs Temporal thickness asymmetry (partial corr): r = 0.57, p = 0.00
+
+total_neurocog vs TMP thickness asymmetry: r = 0.43, p = 0.03
+result vs TMP thickness asymmetry (partial corr): r = 0.44, p = 0.03
+Event_Seizure, ACS, myelitis, CVA vs TMP thickness asymmetry: r = 0.73, p = 0.00
+Event_Seizure, ACS, myelitis, CVA vs TMP thickness asymmetry (partial corr): r = 0.84, p = 0.00
+
+total_neurocog vs MTG thickness asymmetry: r = 0.43, p = 0.03
+result vs MTG thickness asymmetry (partial corr): r = 0.47, p = 0.02
+Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry: r = 0.41, p = 0.03
+Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry (partial corr): r = 0.48, p = 0.02
+
+## Regression Analysis
+
+A linear regression was employed by using: 
+
+target = 'NP-SLE'
+
+predictors = ['SCA thickness asymmetry', 'Amygdala right volume %', 'Temporal thickness asymmetry', 'TMP thickness asymmetry', 'MTG thickness asymmetry', 'AnAb ', 'aPL syndrome']
+
+Mean Squared Error:  0.29831871364555906
+R-squared:  -1.1478947382480253
+
+Not significant. 
+
+A logistic regression was attempted. 
+Logistic Regression's accuracy:  66.67 % 
+The F-1 Score of the model: 0.4 
+The Recall Score of the model: 0.4
+AUC:0.4
+Sensitivity (TPR): 0.8
+Specificity (TNR): 0.0
+Precision (PPV): 0.8
+Negative Predictive Value (NPV): 0.0
+False Positive Rate (FPR): 1.0
+
+## Random Forest Model
+
+3 random forest models were deployed. 
+The best one used Boruta for feature selection. 
+
+Random Forest accuracy:  83.33 %
+
+1. The F-1 Score of the model: 0.83
+
+2. The Recall Score of the model: 0.83
+
+3. Classification report:
+              precision    recall  f1-score   support
+
+           0       0.75      1.00      0.86         3
+           1       1.00      0.67      0.80         3
+
+    accuracy                           0.83         6
+   macro avg       0.88      0.83      0.83         6
+weighted avg       0.88      0.83      0.83         6
+
+
+4. AUC:
+0.8333333333333333
+Specificity (TNR): 1.0
+Precision (PPV): 1.0
+Negative Predictive Value (NPV): 0.75
+False Positive Rate (FPR): 0.0
