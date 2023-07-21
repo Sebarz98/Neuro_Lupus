@@ -6,46 +6,6 @@ Investigating Systemic Lupus Erythematosus effects on volumetric brain MRI.
 #### Distributions were checked for normality and homogenity
 #### Statistical significance has been evaluated for a p-value < 0.05
 
-## Parametric Tests
-
-### T-Test
-T-Test between NP-SLE and not was conducted amongst mri features, as normally distributed. 
-Amidst the statistically relevant regions found: 'Amygdala total volume %', OpIFG total volume cm3', 'MFC left volume %', 'SMC volume asymmetry', 'Occipital left volume cm3','SOG total thickness mm', 'OCP left thickness norm.', 'AIns thickness asymmetry'. 
-
-#### Cat plot with Abnormal White matter on y-axis, NP-SLE on x-axis and Disease Duration as other grouping
-
-![T_test_white_duration_NP](https://user-images.githubusercontent.com/70062910/232325116-894bf5d4-3d41-4bfa-9969-1530182d022b.png)
-
-#### Cat plot with Abnormal White matter on y-axis, AnAb on x-axis and Disease Duration as other grouping
-
-![T_test_white_duration_AnAb](https://user-images.githubusercontent.com/70062910/232325132-2f7738ca-78b9-4fc6-81e0-a24a31519fdf.png)
-
-#### Cat plot with Abnormal White matter on y-axis, aPL on x-axis and Disease Duration as other grouping
-
-![T_test_white_duration_aPL](https://user-images.githubusercontent.com/70062910/232325149-4bf26ce9-7e2f-4be5-b8fe-525ee80fdcf8.png)
-
-#### Pair gird plot with Abnormal White matter on y-axis, aPL on x-axis and NP-SLE as other grouping
-
-![T_test_white_aPL_NP](https://user-images.githubusercontent.com/70062910/232325229-56f848fd-3add-4689-b6d7-2519c8de1c1b.png)
-
-#### Pair gird plot with Abnormal White matter on y-axis, AnAb on x-axis and NP-SLE as other grouping
-
-![T_test_white_AnAb_NP](https://user-images.githubusercontent.com/70062910/232325246-87f0e843-e6b8-4277-aa00-f552c58534ee.png)
-
-### One-way analysis of variance (ANOVA) with F-Distribution
-
-H0 not rejected for Abnormal White Matter based on NP-SLE
-![F_dist_NP_White](https://user-images.githubusercontent.com/70062910/232325830-2e63c86d-b221-4348-bbf2-73e26fcb024e.png)
-
-H0  rejected for SCA Thickness asymmetry based on NP-SLE
-![F_dist_NP_SCA](https://user-images.githubusercontent.com/70062910/232325837-85a50f56-6db7-43a6-b714-968277fa619a.png)
-
-### Chi-Square
-
-Chi-Square test was conducted on AnAb and aPL, but was not statistically significant
-
-## Non Parametric Tests
-
 ### Welch T-test
 
 By groupying based on NP-SLE, clinical statistically significant variables were:['aPL syndrome', 'AnAb ', 'Anti-Rib-P']
@@ -53,18 +13,42 @@ By groupying based on NP-SLE, clinical statistically significant variables were:
 ### Wilcoxon rank-sum test
 
 Was conducted to compare continuous mri variables among groups based on NP-SLE 
-Many were found to be statistically significant, the 5 most were plotted.
+Many were found to be statistically significant, the 5 most were: CO Total volume %, OCP total thickness norm,  OCP left thickness norm,  Ang right thickness mm,  OCP total thickness mm. <br />
 
-![Wilcoxon](https://user-images.githubusercontent.com/70062910/232326022-b679f2b8-c470-4fa6-a115-c2f74bc7ad99.png)
+For SLEDAI (< or > 4): Ent left volume cm3, Ent total volume %, Ent total volume cm3, Gray Matter volume %, PT right thickness norm <br />
+
+For dsDNA titre: CO right volume %, Insula right volume %, OpIFG thickness asymmetry, Brainstem volume %, FuG thickness asymmetry <br />
+
+For Anti-Ro-SSA: Frontal volume asymmetry, GRe volume asymmetry, MOG right volume cm3, OrIFG left volume %, MOG right volume % <br />
+
+For Anti-RNP: FuG left volume %, FuG total volume %, FuG total volume cm3, FuG left volume cm3, FuG right volume % <br />
+
+For LAC: OFuG left thickness norm, OFuG total thickness norm, Cerebellum WM total volume %, Cerebellum WM right volume %, OFuG left thickness mm <br />
+
+For Anti-Sm: LiG volume asimmetry, LiG left volume %, PCgG right thickness norm, FO volume asymmetry, PCgG right thickness mm <br /> 
+
+For aPL: PHG volume asimmetry, TTG thickness asimmetry, Thalamus volume asimmetry, Temporal total volume %, Temporal right volume % <br />
+
+For AnAb: AnG right thickness mm, OrIFG right thickness mm, CO volume asymmetry, OrIFG right thickness norm, SCA left thickness mm <br />
+
+For Anti-Rib-P: AnG right thickness mm, OpIFG left volume cm3, Cerebellar Gray Matter volume cm3, Cerebellar Gray Matter right volume cm3, Cerebellar Gray Matter total volume cm3 <br />
+
+For Anti-DWEYS: Cerebellar Vermal Lobule VII volume cm3, LiG left volume cm3, OCP left volume cm3, OCP total volume cm3, MPrG right volume % <br />
+
+For Cutaneous Vasculitis:  AnG right volume cm3,  AnG left volume cm3, MPrG left volume %, PT left thickness mm, iOG left volume cm3 <br />
+
+For Hypertension: OpIFG right volume %, OpIFG left volume %, TTG total thickness mm, TG total thickness norm, AnG right volume % <br />
+
+For smoking: PHG left volume cm3, PT right thickness mm, STG volume asymmetry, Cerebrum GM volume asymmetry, OrIFG thickness asymmetry <br />
+
 
 ### Fisher’s exact 
 
-Was conducted to compare categorical variables among groups based on NP-SLE and AnAb:
+Was conducted to compare categorical variables among groups, based on NP-SLE and AnAb:
 Odds ratio: 7.00; P-value: 0.0461
 
-### Kruskal-Wallis test (equivalent of ANOVA)
-
-<img width="666" alt="kruskal" src="https://user-images.githubusercontent.com/70062910/232326335-57229d36-097a-44e9-9b44-98924f0f86b1.png">
+Was conducted to compare categorical variables among groups, based on NP-SLE and Anti-Rib-P:
+Odds ratio: 9.00; P-value: 0.0768
 
 ## Correlation Analysis
 
@@ -139,29 +123,166 @@ result vs MTG thickness asymmetry (partial corr): r = 0.47, p = 0.02 <br />
 Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry: r = 0.41, p = 0.03 <br />
 Event_Seizure, ACS, myelitis, CVA vs MTG thickness asymmetry (partial corr): r = 0.48, p = 0.02 <br />
 
-## Regression Analysis
+### SLEDAI <br />
 
-A linear regression was employed to differentiate between non NP-SLE and NP-SLE, by using: 
+Event_Seizure, ACS, myelitis, CVA vs SLEDAI-2k (at the time of NP event): r = 0.30, p = 0.12 <br />
+Event_Seizure, ACS, myelitis, CVA vs SLEDAI-2k (at the time of NP event) (partial corr): r = 0.64, p = 0.00 <br /> 
+IOG volume asymmetry vs SLEDAI-2k (at the time of NP event): r = 0.42, p = 0.03 <br />
+IOG volume asymmetry vs SLEDAI-2k (at the time of NP event) (partial corr): r = 0.55, p = 0.00 <br />
+Event_CVA vs IOG volume asymmetry: r = -0.28, p = 0.16 <br />
+Event_CVA vs IOG volume asymmetry (partial corr): r = -0.34, p = 0.10 <br />
+Event_Mood abnormalities (depressive) vs IOG volume asymmetry: r = 0.23, p = 0.24 <br />
+Event_Mood abnormalities (depressive) vs IOG volume asymmetry (partial corr): r = 0.07, p = 0.73 <br />
+Event_Mood abnormalities (mixed) vs IOG volume asymmetry: r = 0.30, p = 0.13 <br /> 
+Event_Mood abnormalities (mixed) vs IOG volume asymmetry (partial corr): r = 0.33, p = 0.10 <br />
 
-target = 'NP-SLE' <br />
+Calc total volume % vs SLEDAI-2k (at the time of NP event): r = 0.39, p = 0.04 <br />
+Calc total volume % vs SLEDAI-2k (at the time of NP event) (partial corr): r = 0.48, p = 0.02 <br />
+Event_Seizure vs Calc total volume %: r = -0.47, p = 0.01 <br />
+Event_Seizure vs Calc total volume % (partial corr): r = -0.33, p = 0.11 <br />
 
-predictors = ['SCA thickness asymmetry', 'Amygdala right volume %', 'Temporal thickness asymmetry', 'TMP thickness asymmetry', 'MTG thickness asymmetry', 'AnAb ', 'aPL syndrome'] <br />
+Amygdala total volume % vs SLEDAI-2k (at the time of NP event): r = 0.38, p = 0.05 <br />
+Amygdala total volume  % vs SLEDAI-2k (at the time of NP event) (partial corr): r = 0.21, p = 0.31 <br />
+Event_Movement Disorder vs Amygdala total volume %: r = 0.30, p = 0.13 <br />
+Event_Movement Disorder vs Amygdala total volume % (partial corr): r = 0.27, p = 0.20 <br />
 
-Mean Squared Error:  0.29831871364555906 <br />
-R-squared:  -1.1478947382480253 <br />
+Event_CVA vs PHG total thickness norm.: r = -0.30, p = 0.13 <br />
+Event_CVA vs PHG total thickness norm. (partial corr): r = -0.51, p = 0.01 <br />
 
-Not significant. 
+4th Ventricle volume % vs SLEDAI-2k (at the time of NP event): r = 0.32, p = 0.10 <br />
+4th Ventricle volume % vs SLEDAI-2k (at the time of NP event) (partial corr): r = 0.45, p = 0.03 <br />
+Event_Seizure, ACS, myelitis, CVA vs 4th Ventricle volume %: r = 0.33, p = 0.10 <br />
+Event_Seizure, ACS, myelitis, CVA vs 4th Ventricle volume % (partial corr): r = 0.52, p = 0.01 <br />
 
-A logistic regression was attempted. <br />
-Logistic Regression's accuracy:  66.67 % <br />
-The F-1 Score of the model: 0.4 <br />
-The Recall Score of the model: 0.4 <br />
-AUC:0.4 <br />
-Sensitivity (TPR): 0.8 <br />
-Specificity (TNR): 0.0 <br />
-Precision (PPV): 0.8 <br />
-Negative Predictive Value (NPV): 0.0 <br />
-False Positive Rate (FPR): 1.0 <br />
+### SLICC <br />
+
+Event_Mood abnormalities (depressive) vs SLICC-DI (at the time of NP event): r = -0.15, p = 0.45 <br />
+Event_Mood abnormalities (depressive) vs SLICC-DI (at the time of NP event) (partial corr): r = -0.42, p = 0.04 <br /> 
+Event_Psychosis vs SLICC-DI (at the time of NP event): r = 0.45, p = 0.02<br /> 
+Event_Psychosis vs SLICC-DI (at the time of NP event) (partial corr): r = 0.64, p = 0.00 <br />
+
+OpIFG total volume % vs SLICC-DI (at the time of NP event): r = -0.61, p = 0.00 <br />
+OpIFG total volume % vs SLICC-DI (at the time of NP event) (partial corr): r = -0.49, p = 0.01 <br /> 
+
+MPoG right volume % vs SLICC-DI (at the time of NP event): r = -0.54, p = 0.00 <br />
+MPoG right volume % vs SLICC-DI (at the time of NP event) (partial corr): r = -0.37, p = 0.07 <br />
+
+Ventral DC left volume % vs SLICC-DI (at the time of NP event): r = -0.49, p = 0.01 <br />
+Ventral DC left volume % vs SLICC-DI (at the time of NP event) (partial corr): r = -0.56, p = 0.0 <br />
+
+Event_Mood abnormalities (mixed) vs Ventral DC left volume %: r = 0.33, p = 0.10 <br />
+Event_Mood abnormalities (mixed) vs Ventral DC left volume % (partial corr): r = 0.39, p = 0.06 <br />
+
+Insular right thickness mm vs SLICC-DI (at the time of NP event): r = -0.49, p = 0.01 <br />
+Insular right thickness mm vs SLICC-DI (at the time of NP event) (partial corr): r = -0.42, p = 0.03 <br />
+
+Event_Mood abnormalities (depressive) vs Insular right thickness mm: r = 0.29, p = 0.14 <br />
+Event_Mood abnormalities (depressive) vs Insular right thickness mm (partial corr): r = 0.40, p = 0.05 <br />
+
+MG total volume % vs SLICC-DI (at the time of NP event): r = -0.51, p = 0.01 <br />
+SMG total volume % vs SLICC-DI (at the time of NP event) (partial corr): r = -0.43, p = 0.03 <br />
+
+Event_CVA vs SMG total volume %: r = -0.33, p = 0.10 <br />
+Event_CVA vs SMG total volume % (partial corr): r = -0.42, p = 0.03 <br />
+
+### dsDNA  <br />
+
+Event_Seizure vs anti-dsDNA Titre  (insert NV here <7 ): r = 0.12, p = 0.55 <br />
+Event_Seizure vs anti-dsDNA Titre  (insert NV here <7 ) (partial corr): r = 0.56, p = 0.00 <br />
+
+AOrG thickness asymmetry vs anti-dsDNA Titre  (insert NV here <7 ): r = -0.47, p = 0.01 <br />
+AOrG thickness asymmetry vs anti-dsDNA Titre  (insert NV here <7 ) (partial corr): r = -0.23, p = 0.27 <br />
+Event_Seizure, ACS, myelitis, CVA vs AOrG thickness asymmetry: r = -0.28, p = 0.16 <br />
+Event_Seizure, ACS, myelitis, CVA vs AOrG thickness asymmetry (partial corr): r = -0.38, p = 0.06 <br />
+
+SPL volume asymmetry vs anti-dsDNA Titre  (insert NV here <7 ): r = -0.43, p = 0.03 <br />
+SPL volume asymmetry vs anti-dsDNA Titre  (insert NV here <7 ) (partial corr): r = -0.01, p = 0.96 <br />
+
+AnG total thickness mm vs anti-dsDNA Titre  (insert NV here <7 ): r = -0.43, p = 0.03 <br />
+AnG total thickness mm vs anti-dsDNA Titre  (insert NV here <7 ) (partial corr): r = -0.25, p = 0.23 <br />
+
+Event_Seizure, ACS, myelitis, CVA vs AnG total thickness mm: r = -0.33, p = 0.10 <br />
+Event_Seizure, ACS, myelitis, CVA vs AnG total thickness mm (partial corr): r = -0.47, p = 0.02 <br />
+
+AnG left thickness mm vs anti-dsDNA Titre  (insert NV here <7 ): r = -0.41, p = 0.04 <br />
+AnG left thickness mm vs anti-dsDNA Titre  (insert NV here <7 ) (partial corr): r = -0.37, p = 0.07 <br />
+
+Event_Seizure vs AnG left thickness mm: r = -0.48, p = 0.01 <br />
+Event_Seizure vs AnG left thickness mm (partial corr): r = -0.24, p = 0.24 <br />
+Event_Seizure, ACS, myelitis, CVA vs AnG left thickness mm: r = -0.33, p = 0.10 <br />
+Event_Seizure, ACS, myelitis, CVA vs AnG left thickness mm (partial corr): r = -0.38, p = 0.06 <br />
+
+### C3 mg/dL <br />
+
+Event_Mood abnormalities (mixed) vs C3 (mgdl): r = 0.28, p = 0.16 <br />
+Event_Mood abnormalities (mixed) vs C3 (mgdl) (partial corr): r = 0.40, p = 0.04 <br />
+
+Event_Movement Disorder vs AnG left thickness mm: r = 0.30, p = 0.13 <br />
+Event_Movement Disorder vs AnG left thickness mm (partial corr): r = 0.35, p = 0.09 <br />
+Event_Seizure vs AnG left thickness mm: r = -0.48, p = 0.01 <br />
+Event_Seizure vs AnG left thickness mm (partial corr): r = -0.24, p = 0.24 <br />
+Event_Seizure, ACS, myelitis, CVA vs AnG left thickness mm: r = -0.33, p = 0.10 <br />
+Event_Seizure, ACS, myelitis, CVA vs AnG left thickness mm (partial corr): r = -0.38, p = 0.06 <br />
+
+Calc right volume cm3 vs C3 (mgdl): r = -0.56, p = 0.00 <br />
+Calc right volume cm3 vs C3 (mgdl) (partial corr): r = -0.56, p = 0.00 <br />
+
+Event_Seizure vs Calc right volume cm3: r = -0.41, p = 0.03 <br />
+Event_Seizure vs Calc right volume cm3 (partial corr): r = -0.16, p = 0.44 <br />
+
+Event_CVA vs Calc right volume cm3: r = -0.33, p = 0.10 <br />
+Event_CVA vs Calc right volume cm3 (partial corr): r = -0.35, p = 0.09 <br />
+
+PCu right thickness mm vs C3 (mgdl): r = 0.52, p = 0.01 <br />
+PCu right thickness mm vs C3 (mgdl) (partial corr): r = 0.46, p = 0.02 <br />
+
+Event_Seizure, ACS, myelitis, CVA vs PCu right thickness mm: r = -0.33, p = 0.10 <br />
+Event_Seizure, ACS, myelitis, CVA vs PCu right thickness mm (partial corr): r = -0.45, p = 0.02 <br />
+
+MOG volume asymmetry vs C3 (mgdl): r = 0.48, p = 0.01 <br />
+MOG volume asymmetry vs C3 (mgdl) (partial corr): r = 0.37, p = 0.07 <br />
+
+### C4 mg/dL <br />
+
+MTG volume asymmetry vs C4 (mgdl): r = 0.54, p = 0.00 <br />
+MTG volume asymmetry vs C4 (mgdl) (partial corr): r = 0.52, p = 0.01 <br />
+
+PIns total volume cm3 vs C4 (mgdl): r = 0.54, p = 0.00 <br />
+PIns total volume cm3 vs C4 (mgdl) (partial corr): r = 0.47, p = 0.02 <br />
+
+FRP right volume cm3 vs C4 (mgdl): r = 0.55, p = 0.00 <br />
+FRP right volume cm3 vs C4 (mgdl) (partial corr): r = 0.39, p = 0.06 <br />
+Event_Seizure vs FRP right volume cm3: r = 0.42, p = 0.03 <br />
+Event_Seizure vs FRP right volume cm3 (partial corr): r = 0.48, p = 0.01 <br />
+
+ITG thickness asymmetry vs C4 (mgdl): r = 0.67, p = 0.00 <br />
+ITG thickness asymmetry vs C4 (mgdl) (partial corr): r = 0.56, p = 0.00 <br />
+
+## Regression Analysis <br />
+
+### Ordinary Least Square Regression <br />
+
+With 10 most correlated variables <br />
+
+#### SLEDAI as target  <br />
+R-Squared: 0.725 <br />
+Adj. R-Squared 0.553 <br />
+
+#### SLICC as target  <br />
+R-Squared: 0.715 <br />
+Adj. R-Squared 0.537 <br />
+
+#### dsDNA as target  <br />
+R-Squared: 0.234 <br />
+Adj. R-Squared - 0.245 <br />
+
+#### C3 mg/dL as target  <br />
+R-Squared: 0.622 <br />
+Adj. R-Squared 0.386 <br />
+
+#### PGA as target  <br />
+R-Squared: 0.662 <br />
+Adj. R-Squared 0.451 <br />
 
 ## Random Forest Model
 
