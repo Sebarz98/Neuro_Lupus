@@ -12,7 +12,7 @@ By groupying based on NP-SLE, clinical statistically significant variables were:
 
 ### Wilcoxon rank-sum test
 
-Tes to compare continuous variables among groups. <br />
+Test to compare continuous variables among groups. <br />
 Was conducted to compare continuous mri variables among groups based on NP-SLE. <br />
 Many were found to be statistically significant, the 5 most were: CO Total volume %, OCP total thickness norm,  OCP left thickness norm,  Ang right thickness mm,  OCP total thickness mm. <br />
 
