@@ -1,7 +1,7 @@
 # Neuro_Lupus
 Code repository for the paper "Structural Brain MRI Alterations in Systemic Lupus Erythematous patients with and without neuropsychiatric events"
 
-Manuscript currently under peer-review.
+Manuscript accepted in the American Journal of Neuroradiology (AJNR) and currently in press.
 
 # Abstract
 
